@@ -96,8 +96,6 @@ Then both of these two created tables were combined using UNION ALL (duplicates 
 lastly here the score values were rounded off with given alias as weak_score.
 
 ## FINAL OUTPUT.
-
-
-
+[View CSV on GitHub](task_1_final_output.csv)
 
 

@@ -64,13 +64,13 @@ Additionally the limit check using descRonum value below 30000 and same for ascR
 ```sql
 with topEntries as (
 select image_id, score,
-row_number() over(order by image_id desc) as descRonum
+row_number() over(order by score desc) as descRonum
 from uip
 limit 10000),
 
 bottomEntries as (
 select image_id, score,
-row_number() over(order by image_Id ) as ascRonum
+row_number() over(order by score ) as ascRonum
 from uip
 limit 100000)
 

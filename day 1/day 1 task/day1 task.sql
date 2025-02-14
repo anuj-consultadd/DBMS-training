@@ -38,13 +38,13 @@ descRonum < 30000 AND mod(descRonum, 3) = 1 or ascRonum < 30000 AND mod(ascRonum
 -- method 2 using CTEs
 with topEntries as (
 select image_id, score,
-row_number() over(order by image_id desc) as descRonum
+row_number() over(order by score desc) as descRonum
 from uip
 limit 10000),
 
 bottomEntries as (
 select image_id, score,
-row_number() over(order by image_Id ) as ascRonum
+row_number() over(order by score ) as ascRonum
 from uip
 limit 100000)
 

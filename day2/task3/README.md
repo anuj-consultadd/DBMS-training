@@ -1,6 +1,6 @@
 # Problem Statement
 
-### Given below are the schemas of a different items held by differnet users and the type and quality of those itmes are also given in seperate tables. We need to design a item adviser mechanism that suggests the HIGHEST quality item of a given type for a given user and the data should be arranged in ascending order by username and then ascending order by type.
+### Given below are the three schemas of different accounts belonging to users, another where imformation about differnet items are managed and lastly which defines which item is held by which account_id and whats its quality. We need to design a item adviser mechanism that suggests the HIGHEST quality item of a given type for a given user and the data should be arranged in ascending order by username and then ascending order by type.
 
 ## Database and Schema SQL code:
 
